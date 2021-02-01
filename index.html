@@ -1,13 +1,33 @@
 <html>
 <head>
+    <link rel="stylesheet" href="site.css">
 </head>
 <body>
-<h1>Thank you for helping Keep Rookwood Green!</h1>
-Letting us know that you visited today helps us make the case to preserve this green space.
-We care about your privacy and we store no information at all about you.
+<img class="banner" src="img/RookwoodLogoHorizontalOpaque.gif"/>
 
-<div id="visit_total">Counting visitors...</div>
-<div id="error_message"></div>
+<h1>Thank you for helping to keep Rookwood green!</h1>
+
+<hr/>
+
+<div class = "countertext" id="visit_total">Counting visitors...</div>
+<div  class="normaltext" id="error_message"></div>
+<p/>
+<div class="normaltext">
+Letting us know that you visited today helps us make the case to preserve this green space.  The more we can do to show that Rookwood, the golf course, and the river path are all used by Horsham residents, the better the chance of saving them.
+</div>
+<p/>
+<div class="normaltext">
+    Visit <a href="http://keeprookwoodgreen.org">Keep Rookwood Green</a> to learn more about Rookwood and how we can preserve it for the community.
+</div>
+
+<center>
+    <div class="button button4">Visit the Keep Rookwood Green page</div>
+</center>
+<p/>
+<div class="policytext">
+   We care about privacy and we store NO information about you.
+</div>
+
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/faunadb@latest/dist/faunadb.js"></script>
@@ -15,7 +35,7 @@ We care about your privacy and we store no information at all about you.
 
     function updateScreen(num){
         let m = document.getElementById("visit_total");
-        m.innerText = "So far there have been " + num + " vistors who have expressed their support for Rookwood!";
+        m.innerText = "So far  <b>" + num + "</b> vistors like you have used this counter to show that they use Rookwood!";
     }
 
     function showError(err){
