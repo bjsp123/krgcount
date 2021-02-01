@@ -2,20 +2,33 @@
 <head>
 </head>
 <body>
-<h1>Thank you for helping Keep Rookwood Green!</h1>
-Letting us know that you visited today helps us make the case to preserve this green space.
-We care about your privacy and we store no information at all about you.
+<h1>How many visitors have we had?</h1>
+This screen just shows the raw data (which isn't very interesting, due to privacy and all, but can be used to infer a few things like busy times of day).
 
-<div id="visit_total">Counting visitors...</div>
+<div id="visitor_table">Looking for visitors...</div>
 <div id="error_message"></div>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/faunadb@latest/dist/faunadb.js"></script>
 <script type="text/javascript">
 
-    function updateScreen(num){
-        let m = document.getElementById("visit_total");
-        m.innerText = "So far there have been " + num + " vistors who have expressed their support for Rookwood!";
+    function updateScreen(obj){
+        let m = document.getElementById("visitor_table");
+
+        let d = obj.data;
+        let s="Visitors:</br>\n";
+        s += "Timestamp, Language, Product, Appname, Platform, UserAgent</br>\n";
+
+        for(i in d){
+            s = s + d[i].data["timestamp"] + ", ";
+            s = s + d[i].data["language"] + ", ";
+            s = s + d[i].data["product"] + ", ";
+            s = s + d[i].data["appname"] + ", ";
+            s = s + d[i].data["platform"] + ", ";
+            s = s + d[i].data["useragent"];
+            s = s + "</br>\n";
+        }
+        m.innerHTML = s;
     }
 
     function showError(err){
@@ -36,7 +49,10 @@ We care about your privacy and we store no information at all about you.
     })
 
     client.query(
-        q.Count(q.Documents(q.Collection('visitors')))
+        q.Map(
+            q.Paginate(q.Documents(q.Collection('visitors'))),
+            q.Lambda(x => q.Get(x))
+        )
     )
         .then((ret) => updateScreen(ret))
         .catch((err) => showError(err))
