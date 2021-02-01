@@ -16,6 +16,7 @@ This screen just shows the raw data (which isn't very interesting, due to privac
 <script src="https://cdn.jsdelivr.net/npm/faunadb@latest/dist/faunadb.js"></script>
 <script type="text/javascript">
 
+
     function updateScreen(obj){
         let m = document.getElementById("visitor_table");
 
@@ -24,6 +25,7 @@ This screen just shows the raw data (which isn't very interesting, due to privac
         s += "Timestamp, Language, Product, Appname, Platform, UserAgent</br>\n";
 
         for(i in d){
+            s = s + d[i].data["parameter"] + ", ";
             s = s + d[i].data["timestamp"] + ", ";
             s = s + d[i].data["language"] + ", ";
             s = s + d[i].data["product"] + ", ";
