@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="56cdb8f0-821b-4829-a5f1-b3059c45eae1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cupcake.html" beforeDir="false" afterPath="$PROJECT_DIR$/cupcake.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,11 +30,17 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../temp/vars" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\temp\vars" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -44,11 +50,42 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1612117416484</updated>
-      <workItem from="1612117418684" duration="17405000" />
+      <workItem from="1612117418684" duration="35220000" />
+      <workItem from="1612518241008" duration="1977000" />
+      <workItem from="1613905896820" duration="335000" />
+      <workItem from="1614542368706" duration="403000" />
+      <workItem from="1616349693456" duration="76000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="912" y="545" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1612441883659">
+      <screen x="0" y="0" width="2477" height="1440" />
+    </state>
+    <state x="912" y="545" key="#com.intellij.fileTypes.FileTypeChooser/612.2160.1558.1080/0.0.2477.1440@0.0.2477.1440" timestamp="1612441883659" />
+    <state x="533" y="425" key="FileChooserDialogImpl" timestamp="1614543106691">
+      <screen x="0" y="0" width="1549" height="1080" />
+    </state>
+    <state x="533" y="425" key="FileChooserDialogImpl/0.0.1549.1080@0.0.1549.1080" timestamp="1614543106691" />
+    <state x="853" y="566" key="FileChooserDialogImpl/612.2160.1558.1080/0.0.2477.1440@0.0.2477.1440" timestamp="1612453562938" />
+    <state width="2456" height="508" key="GridCell.Tab.0.bottom" timestamp="1612446232741">
+      <screen x="0" y="0" width="2477" height="1440" />
+    </state>
+    <state width="2456" height="508" key="GridCell.Tab.0.bottom/612.2160.1558.1080/0.0.2477.1440@0.0.2477.1440" timestamp="1612446232741" />
+    <state width="2456" height="508" key="GridCell.Tab.0.center" timestamp="1612446232741">
+      <screen x="0" y="0" width="2477" height="1440" />
+    </state>
+    <state width="2456" height="508" key="GridCell.Tab.0.center/612.2160.1558.1080/0.0.2477.1440@0.0.2477.1440" timestamp="1612446232741" />
+    <state width="2456" height="508" key="GridCell.Tab.0.left" timestamp="1612446232740">
+      <screen x="0" y="0" width="2477" height="1440" />
+    </state>
+    <state width="2456" height="508" key="GridCell.Tab.0.left/612.2160.1558.1080/0.0.2477.1440@0.0.2477.1440" timestamp="1612446232740" />
+    <state width="2456" height="508" key="GridCell.Tab.0.right" timestamp="1612446232741">
+      <screen x="0" y="0" width="2477" height="1440" />
+    </state>
+    <state width="2456" height="508" key="GridCell.Tab.0.right/612.2160.1558.1080/0.0.2477.1440@0.0.2477.1440" timestamp="1612446232741" />
   </component>
 </project>

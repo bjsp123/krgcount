@@ -22,7 +22,7 @@ This screen just shows the raw data (which isn't very interesting, due to privac
 
         let d = obj.data;
         let s="Visitors:</br>\n";
-        s += "Timestamp, Language, Product, Appname, Platform, UserAgent</br>\n";
+        s += "Parameter,Timestamp,Language,Product,Appname,Platform</br>\n";
 
         for(i in d){
             s = s + d[i].data["parameter"] + ", ";
@@ -30,8 +30,7 @@ This screen just shows the raw data (which isn't very interesting, due to privac
             s = s + d[i].data["language"] + ", ";
             s = s + d[i].data["product"] + ", ";
             s = s + d[i].data["appname"] + ", ";
-            s = s + d[i].data["platform"] + ", ";
-            s = s + d[i].data["useragent"];
+            s = s + d[i].data["platform"];
             s = s + "</br>\n";
         }
         m.innerHTML = s;
@@ -56,7 +55,7 @@ This screen just shows the raw data (which isn't very interesting, due to privac
 
     client.query(
         q.Map(
-            q.Paginate(q.Documents(q.Collection('visitors')), {size:1000}),
+            q.Paginate(q.Documents(q.Collection('visitors')), {size:10000}),
             q.Lambda(x => q.Get(x))
         )
     )
